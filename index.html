@@ -1,0 +1,153 @@
+<html> 
+  <head>
+    <meta charset="UTF-8">
+    
+    <style>
+      .love {
+        display:flex ;
+        justify-content: center; 
+        align-items: center;
+      }       
+      h1 {
+        display: flex; 
+        justify-content: center; 
+        opacity: 0; 
+        color: red;
+      } 
+      h1:hover {
+        transition: 10s all;
+      } 
+      .wntr {
+        display: flex; 
+        justify-content: center; 
+        
+      }
+      #bttn {
+        display:flex ; 
+        justify-content: center; 
+        width: 60px; 
+        color: red; 
+        text-align: none; 
+        border: solid 1px white ; 
+        border-radius: 5px; 
+        opacity: 0;
+      }
+      .cntl {
+        width: min-content;
+        height: min-content; 
+        background-color: white; 
+        
+        position: fixed; 
+        top: 50%; 
+        left: 15%; 
+        display: none;
+        
+      } 
+      #cntlbtn {
+        display: flex; 
+        justify-content: center; 
+        display: none; 
+      } 
+      .boxes {
+        width: 100px;  
+        height: 80px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        margin: 1px; 
+        color: black; 
+        text-align: center; 
+        background-color: #DAF7A6; 
+        border-radius: 5px;
+      }
+      .content { 
+        display: flex; 
+        flex-direction:row-reverse; 
+        align-items: center; 
+      } 
+      .reff {
+        width: 160px;
+        height: 30px;
+        background-color:#DAF7A6 ; 
+        text-align: center;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        margin-left: 25%; 
+        border-radius: 5px;
+      }
+      .reff a {
+        text-decoration: none; 
+        outline-style: none;
+        color: black; 
+        
+      } 
+    
+    </style>
+    <body>
+    <box class="love">
+      <img src="https://play-lh.googleusercontent.com/25w8obsod0DVKrfZLm5rCIu7swoHtqq9FHwGEW84AWBAcJSJ-NW24jE9YPVYnKBY_mQ" width="200px" onclick="btn()">
+    </box> 
+    <p class="wntr">
+  <button id="bttn" onclick="bxbtn()">Эхлэх</button>
+    </p>
+    <h1 id="chnge"></h1> 
+    <container class="cntl" id="cntlbtn">
+      <div class="content" onclick="chbtn()">
+        <div class="boxes" id="text1" onclick="bx1()">
+          <img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px">
+        </div>
+        <div class="boxes" onclick="bx2()" id="text2"> <img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div> 
+        <div class="boxes" id="text3" onclick="bx3()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div>
+      </div>
+<div class="content">
+        <div class="boxes" id="text4" onclick="bx4()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div>
+        <div class="boxes" id="text5" onclick="bx5()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div> 
+        <div class="boxes" id="text6" onclick="bx6()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div> 
+      </div>
+<div class="content">
+        <div class="boxes" id="text8" onclick="bx8()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div>
+        <div class="boxes" id="text9" onclick="bx9()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div> 
+        <div class="boxes" id="text10" onclick="bx10()"><img src="https://www.kandkcreativetoys.com.au/cdn/shop/products/Gift_Wrap_1200_1200px.png?v=1680443123" width="100px" height="80px"></div> 
+      </div>
+      <div class="reff"><a href="">Дахин оролдох</a><div>
+    </container>
+    <script>
+      function btn() {
+        document.getElementById("chnge").style.opacity="1"
+        document.getElementById("bttn").style.opacity="1"
+      } 
+       function bxbtn(){
+         document.getElementById("cntlbtn").style.display ="block"
+       } 
+       function bx1(){
+         document.getElementById("text1").innerHTML="Караоке орох"
+       } 
+       function bx2(){
+         document.getElementById("text2").innerHTML="KFC"
+       } 
+       function bx3(){
+         document.getElementById("text3").innerHTML="хотоос гарж зугаалах"
+       }
+       function bx4(){
+         document.getElementById("text4").innerHTML="хамт кино үзэх"
+       } 
+       function bx5(){
+         document.getElementById("text5").innerHTML="Цэцэг авах"
+       } 
+       function bx6(){
+         document.getElementById("text6").innerHTML="Караоке орох"
+       } 
+       function bx8(){
+         document.getElementById("text8").innerHTML="Халамж"
+       } 
+       function bx9(){
+         document.getElementById("text9").innerHTML="Гадуур гарах"
+       } 
+       function bx10(){
+         document.getElementById("text10").innerHTML="Хамт дугуй унах"
+       }
+    </script>
+    </body>
+  </head>
+</html>
